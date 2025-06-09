@@ -71,7 +71,7 @@ const Footer = () => {
             </Typography>
 
             <Stack
-              direction={{ xs: "column", sm: "row" }}
+              direction={{ xs: "row", sm: "row" }}
               spacing={2}
               component="form"
               noValidate
@@ -140,7 +140,7 @@ const Footer = () => {
 
       {/* Bottom Copyright */}
       <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2">
-        <Typography className="!text-sm text-white text-center">
+        <Typography className="!text-xs md:!text-sm text-white text-center">
           Copyright &copy; 2025 FMCC LTD. All rights reserved
         </Typography>
 

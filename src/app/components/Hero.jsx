@@ -58,13 +58,13 @@ export default function Hero() {
             <Typography className=" !text-2xl md:!text-4xl !font-bold !leading-7 !mb-4">
               {title}
             </Typography>
-            <Typography className="!text-lg md:!text-lg !mb-6">
+            <Typography className="!text-sm md:!text-lg !mb-6">
               {subtitle}
             </Typography>
            
             <Button
               variant="contained"
-            className="!text-white !px-8 !py-3 !bg-[#00264D] font-semibold hover:!shadow-2xl hover:!scale-105 flex items-center gap-2"
+            className="!text-white !text-sm !px-8 !py-3 !bg-[#00264D] font-semibold hover:!shadow-2xl hover:!scale-105 flex items-center gap-2"
             >
               Navigate
               <MdArrowForward className="text-white text-xl" />

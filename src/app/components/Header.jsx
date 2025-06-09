@@ -112,7 +112,7 @@ export default function Header() {
         </nav>
 
         {/* Auth */}
-        <Button variant="contained" className="hidden sm:flex gap-4 items-center !bg-[#00264D] text-sm lg:text-sm !py-2 capitalize">
+        <Button variant="contained" className="!hidden sm:!flex gap-4 items-center !bg-[#00264D] text-sm lg:text-sm !py-2 capitalize">
           <Link className="capitalize" href="#">Subscribe</Link>
         </Button>
 
@@ -155,9 +155,7 @@ export default function Header() {
               </Link>
 
               <div className="mt-6 border-t border-white/20 pt-4 flex flex-col gap-3">
-                <Link href="#" onClick={() => setIsMobileMenuOpen(false)}>
-                  Sign In
-                </Link>
+             
                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)}>
                   Subscribe
                 </Link>

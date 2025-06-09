@@ -9,7 +9,7 @@ export default function ServiceCard({ title, description, color, icon: Icon }) {
 
   return (
     <div
-      className="w-96 sm:w-48 sm:h-48 h-72 perspective"
+      className="w-84 sm:w-48 sm:h-48 h-64 perspective"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

@@ -139,7 +139,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Typography variant="h4" fontWeight="bold" className="text-black !text-2xl md:!text-3xl !mb-6">
+            <Typography variant="h4" fontWeight="bold" className="text-black !text-xl md:!text-3xl !mb-6">
             Equipped to meet your requirements..
             </Typography>
           </motion.div>
@@ -149,7 +149,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Typography variant="body1" className="!text-black!text-sm md:!text-base !mx-auto !mb-6  !leading-6 md:!leading-7"> {/* Increased mb */}
+            <Typography variant="body1" className="!text-black !text-sm md:!text-base !mx-auto !mb-6  !leading-6 md:!leading-7"> {/* Increased mb */}
             We are committed to providing industry-leading products and solutions tailored to specific business needs. Our expert team excels in identifying market trends, developing effective solutions, and delivering high-performance systems.
             </Typography>
           </motion.div>
@@ -166,7 +166,7 @@ export default function Home() {
             </Typography>
 
             <Link href="/target-route" className="inline-block mt-6 group hover:text-[#00008B] hover:underline">
-            <div className="flex gap-2 items-center"> <Typography> Learn More</Typography>
+            <div className="flex gap-2 text-sm md:text-base items-center"> <Typography> Learn More</Typography>
             <FaArrowRight className="text-xl   group-hover:translate-x-2 transition-transform duration-300" />
             </div>
             
