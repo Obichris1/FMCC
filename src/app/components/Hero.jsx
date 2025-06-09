@@ -43,7 +43,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* Left Side Mask Only */}
-      <div className="absolute left-0 top-0 h-full w-2/3 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-0" />
+      <div className="absolute left-0 top-0 h-full w-full md:w-2/3 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-0" />
 
       {/* Slide Content */}
       <div className="relative z-10 container px-8 md:px-20 text-white max-w-2xl">
