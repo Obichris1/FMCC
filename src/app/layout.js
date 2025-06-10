@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-
+import WhatsAppIcon from "./components/WhatsappIcon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
        
         {children}
+        <WhatsAppIcon />
         <Footer />
       </body>
     </html>
