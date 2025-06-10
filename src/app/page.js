@@ -77,10 +77,10 @@ export default function Home() {
       <Divider className="" />
 
       <div className="m-auto py-8 w-[90%] ">
-        <Typography  className="!mb-2 !font-semibold !text-2xl md:!text-3xl">
+        <Typography  className="!mb-3 !font-semibold !text-2xl md:!text-3xl">
           What we do
         </Typography>
-        <Typography variant="body1" className="!mb-10 !text-sm md:!text-base">
+        <Typography variant="body1" className="!mb-15 !text-sm md:!text-base">
           Trusted advisor supporting investors and business leaders through
           transactions and growth initiatives
         </Typography>
@@ -122,7 +122,7 @@ export default function Home() {
       </div>
       {/* <Divider className="py-8" /> */}
 
-      <div className=" relative bg-cover py-40 mt-20 text-center rounded-lg text-black"> {/* Increased padding and margin */}
+      <div className=" relative bg-cover py-25 text-center rounded-lg text-black"> {/* Increased padding and margin */}
         {/* Dark Overlay */}
         <div ></div>
 

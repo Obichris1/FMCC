@@ -64,9 +64,9 @@ export default function Hero() {
            
             <Button
               variant="contained"
-            className="!text-white !text-sm !px-8 !py-3 !bg-[#00264D] font-semibold hover:!shadow-2xl hover:!scale-105 flex items-center gap-2"
+            className="!text-white !text-xs md:!text-base !px-8 !py-3 !bg-[#00264D] font-semibold hover:!shadow-2xl hover:!scale-105 flex items-center gap-2"
             >
-              Navigate
+              Explore
               <MdArrowForward className="text-white text-xl" />
             </Button>
           </motion.div>

@@ -9,7 +9,7 @@ import {
 export default function AboutBanner() {
   return (
     <div className="space-y-24">
-      <Box className="bg-white rounded-md w-full  mx-auto flex flex-col md:flex-row !gap-16 items-center">
+      <Box className=" rounded-md w-full  mx-auto flex flex-col md:flex-row !gap-16 items-center">
         {/* Left Section */}
         <div className="flex-1 ">
           <Typography  className="!font-bold !mb-2 !text-lg md:!text-2xl">
