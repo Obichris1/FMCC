@@ -76,7 +76,7 @@ export default function Home() {
 
       <Divider className="" />
 
-      <div className="m-auto py-8 w-[90%]">
+      <div className="m-auto py-8 w-[90%] ">
         <Typography  className="!mb-2 !font-semibold !text-2xl md:!text-3xl">
           What we do
         </Typography>
@@ -122,7 +122,7 @@ export default function Home() {
       </div>
       {/* <Divider className="py-8" /> */}
 
-      <div className="bg-gray-50 relative bg-cover py-40 mt-20 text-center rounded-lg text-black"> {/* Increased padding and margin */}
+      <div className=" relative bg-cover py-40 mt-20 text-center rounded-lg text-black"> {/* Increased padding and margin */}
         {/* Dark Overlay */}
         <div ></div>
 

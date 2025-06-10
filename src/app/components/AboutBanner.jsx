@@ -9,10 +9,10 @@ import {
 export default function AboutBanner() {
   return (
     <div className="space-y-24">
-      <Box className="bg-white border border-gray-200 rounded-md p-6 w-full max-w-screen-xl mx-auto flex flex-col md:flex-row !gap-16 items-center">
+      <Box className="bg-white rounded-md w-full  mx-auto flex flex-col md:flex-row !gap-16 items-center">
         {/* Left Section */}
         <div className="flex-1 ">
-          <Typography  className="!font-bold !mb-2 !text-2xl md:!text-2xl">
+          <Typography  className="!font-bold !mb-2 !text-lg md:!text-2xl">
             Best Place to Work in 2024
           </Typography>
           <Typography variant="body1" className="!text-sm md:!text-base !leading-7">
@@ -28,8 +28,8 @@ export default function AboutBanner() {
           >
             <div className="flex gap-2 items-center">
               {" "}
-              <Typography> Explore Services</Typography>
-              <FaArrowRight className="text-xl   group-hover:translate-x-2 transition-transform duration-300" />
+              <Typography className="!text-sm md:!text-base"> Explore Services</Typography>
+              <FaArrowRight className="!text-sm  md:!text-base group-hover:translate-x-2 transition-transform duration-300" />
             </div>
           </Link>
         </div>

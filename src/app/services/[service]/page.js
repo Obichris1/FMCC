@@ -52,7 +52,7 @@ export default function ServicePage() {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <motion.h1
-          className="relative z-10 text-3xl font-bold text-center"
+          className="relative z-10 text-2xl md:text-3xl font-bold text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}

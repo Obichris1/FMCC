@@ -48,7 +48,7 @@ const About = () => {
 
       <div className="w-[90%] m-auto space-y-8">
         {/* Intro Section */}
-        <div className="m-auto flex flex-col gap-8 mt-20 mb-10">
+        <div className="m-auto flex flex-col gap-8 mt-8 mb-4">
           <motion.div
             className="max-w-xl"
             initial="hidden"
@@ -72,10 +72,10 @@ const About = () => {
             viewport={{ once: true }}
             variants={slideInRight}
           >
-             <Typography  className="!mb-4 !font-semibold md:!text-2xl !mt-20">
+             <Typography  className="!mb-4 !font-semibold !text-lg md:!text-2xl !mt-8">
               The Vision
             </Typography>
-            <Typography className="!text-sm md:!text-base !leading-7">
+            <Typography className="!text-sm md:!text-base !leading-7 !mb-8">
               Our commitment to sustainability is at the heart of everything
               we do. We believe that solar energy is the key to a more
               sustainable future, and we are dedicated to making it accessible
@@ -97,25 +97,7 @@ const About = () => {
         </motion.div>
 
         {/* Vision and Solutions Section */}
-        <motion.div
-          className="grid md:grid-cols-2 gap-12 mt-10 mx-auto"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={slideIn}
-        >
-          {/* <div className="flex flex-col gap-2">
-            <Typography  className="mb-4 !font-semibold md:!text-2xl !mt-20">
-              The Vision
-            </Typography>
-            <Typography>
-              Our commitment to sustainability is at the heart of everything
-              we do. We believe that solar energy is the key to a more
-              sustainable future, and we are dedicated to making it accessible
-              to everyone.
-            </Typography>
-          </div> */}
-        </motion.div>
+       
       </div>
     </div>
   );

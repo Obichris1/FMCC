@@ -10,6 +10,7 @@ import { Button } from "@mui/material";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isservicesOpen, setIsservicesOpen] = useState(false);
   const pathname = usePathname();
   const isServicesActive = pathname.startsWith("/services");
@@ -28,94 +29,95 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 py-4 bg-white text-black shadow-md">
-        <div className="w-[90%] m-auto flex justify-between items-center  ">
-        {/* Logo & Hamburger */}
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-2xl focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <FiMenu />
-          </button>
-          <h1 className="font-serif text-lg sm:text-xl font-bold">FMCC Ltd</h1>
-        </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8 text-sm lg:text-xs relative">
-          <Link
-            href="/"
-            className={pathname === "/" ? activeLinkClass : "pb-1 relative"}
-          >
-            Home
-          </Link>
-
-          <Link
-            href="/about"
-            className={pathname === "/about" ? activeLinkClass : "pb-1 relative"}
-          >
-            About Us
-          </Link>
-
-          {/* services Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setIsservicesOpen(true)}
-            onMouseLeave={() => setIsservicesOpen(false)}
-          >
+        <div className="w-[90%] m-auto flex justify-between items-center">
+          {/* Logo & Hamburger */}
+          <div className="flex items-center gap-4">
             <button
-              className={`flex items-center gap-1 pb-1 ${
-                isServicesActive ? activeLinkClass : ""
-              }`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-2xl focus:outline-none"
+              aria-label="Toggle menu"
             >
-              Services
-              <FaChevronDown
-                className={`transition-transform duration-300 ${
-                  isservicesOpen ? "rotate-180" : ""
-                }`}
-                size={12}
-              />
+              <FiMenu />
             </button>
-
-            
-
-            <AnimatePresence>
-              {isservicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.25 }}
-                  className="absolute left-1/2 top-10 -translate-x-1/2 w-[40vw] bg-white text-black shadow-xl z-50 py-8 px-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-                >
-                  {services.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={`/services/${item.slug}`}
-                      className="hover:text-[#00008B] font-medium"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <h1 className="font-serif text-lg sm:text-xl font-bold">FMCC Ltd</h1>
           </div>
 
-          
-          <Link
-            href="/contact"
-            className={pathname === "/contact" ? activeLinkClass : "pb-1 relative"}
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex gap-8 text-sm lg:text-xs relative">
+            <Link
+              href="/"
+              className={pathname === "/" ? activeLinkClass : "pb-1 relative"}
+            >
+              Home
+            </Link>
+
+            <Link
+              href="/about"
+              className={pathname === "/about" ? activeLinkClass : "pb-1 relative"}
+            >
+              About Us
+            </Link>
+
+            {/* services Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsservicesOpen(true)}
+              onMouseLeave={() => setIsservicesOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 pb-1 ${
+                  isServicesActive ? activeLinkClass : ""
+                }`}
+              >
+                Services
+                <FaChevronDown
+                  className={`transition-transform duration-300 ${
+                    isservicesOpen ? "rotate-180" : ""
+                  }`}
+                  size={12}
+                />
+              </button>
+
+              <AnimatePresence>
+                {isservicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                    className="absolute left-1/2 top-10 -translate-x-1/2 w-[40vw] bg-white text-black shadow-xl z-50 py-8 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    {services.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={`/services/${item.slug}`}
+                        className="hover:text-[#00008B] font-medium block"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <Link
+              href="/contact"
+              className={pathname === "/contact" ? activeLinkClass : "pb-1 relative"}
+            >
+              Contact
+            </Link>
+          </nav>
+
+          {/* Auth */}
+          <Button
+            variant="contained"
+            className="!hidden sm:!flex gap-4 items-center !bg-[#00264D] text-sm lg:text-sm !py-2 capitalize"
           >
-            Contact
-          </Link>
-        </nav>
-
-        {/* Auth */}
-        <Button variant="contained" className="!hidden sm:!flex gap-4 items-center !bg-[#00264D] text-sm lg:text-sm !py-2 capitalize">
-          <Link className="capitalize" href="#">Subscribe</Link>
-        </Button>
-
+            <Link className="capitalize" href="#">
+              Subscribe
+            </Link>
+          </Button>
         </div>
       </header>
 
@@ -129,8 +131,7 @@ export default function Header() {
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4 }}
           >
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-lg sm:text-xl font-bold">Menu</h2>
+            <div className="flex justify-end mb-6">
               <FiX
                 className="text-2xl cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -138,25 +139,57 @@ export default function Header() {
             </div>
 
             <nav className="flex flex-col gap-5 text-base sm:text-lg">
-              {services.map((item, index) => (
-                <Link
-                  key={index}
-                  href={`/services/${item.slug}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+              {/* Services Mobile Dropdown */}
+              <div>
+                <button
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="flex gap-2 items-center w-full text-left text-sm  font-medium"
                 >
-                  {item.label}
-                </Link>
-              ))}
-              <Link href="/about" onClick={() => setIsMobileMenuOpen(false)}>
+                  Services
+                  <FaChevronDown
+                    className={`transition-transform duration-300  ${
+                      isMobileServicesOpen ? "rotate-180" : ""
+                    }`}
+                    size={14}
+                  />
+                </button>
+
+                <AnimatePresence>
+                  {isMobileServicesOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="ml-4 mt-8 mb-4 flex flex-col gap-8"
+                    >
+                      {services.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={`/services/${item.slug}`}
+                          onClick={() => {
+                            setIsMobileMenuOpen(false);
+                            setIsMobileServicesOpen(false);
+                          }}
+                          className="!text-xs"
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <Link href="/about" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </Link>
-              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/contact" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact
               </Link>
 
               <div className="mt-6 border-t border-white/20 pt-4 flex flex-col gap-3">
-             
-                <Link href="#" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="#" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                   Subscribe
                 </Link>
               </div>
@@ -167,4 +200,3 @@ export default function Header() {
     </>
   );
 }
-  

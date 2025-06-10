@@ -150,7 +150,7 @@ const Footer = () => {
           </Typography>
           <Typography className="!text-xs text-white text-center">
             <Link href="https://www.oxrissolutions.com/" target="_blank">
-              OXRIS SOLUTIONS
+              Oxris Solutions
             </Link>
           </Typography>
         </div>

@@ -74,7 +74,7 @@ export default function Hero() {
       </div>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-6 left-[14rem] sm:left-[44rem] flex gap-2 z-20">
+      <div className="absolute bottom-6 left-[11rem] md:left-[24rem] lg:left-[44rem] flex gap-2 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
