@@ -195,7 +195,7 @@ export default function Header() {
               <Link href="/about" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </Link>
-              <Link href="/" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/careers" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
                Careers
               </Link>
               <Link href="/contact" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>

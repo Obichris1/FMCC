@@ -77,7 +77,7 @@ export default function Home() {
       <Divider className="" />
 
       <div className="m-auto py-8 w-[90%] ">
-        <Typography  className="!mb-3 !font-semibold !text-2xl md:!text-3xl">
+        <Typography  className="!mb-3 !font-semibold !text-2xl md:!text-3xl !leading-6 md:!leading-7">
           What we do
         </Typography>
         <Typography variant="body1" className="!mb-15 !text-sm md:!text-base">
