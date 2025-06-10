@@ -47,7 +47,7 @@ const Footer = () => {
             <span className="flex items-center gap-4">
               <AiOutlineMail />
               <Link href="mailto:dolaposquare123@gmail.com">
-               FMCC123@gmail.com
+               info@fmccng.com
               </Link>
             </span>
             <span className="flex items-center gap-4">

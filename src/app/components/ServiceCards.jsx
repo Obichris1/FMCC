@@ -9,7 +9,7 @@ import {
   FaArrowRight
 } from "react-icons/fa";
 
-export default function ServiceCard({ title, description, color, icon: Icon }) {
+export default function ServiceCard({ title, description, color, icon: Icon,label,slug}) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -27,24 +27,28 @@ export default function ServiceCard({ title, description, color, icon: Icon }) {
         {/* Front Side */}
         <div className="absolute w-full h-full backface-hidden bg-white shadow-md rounded-2xl flex flex-col justify-center items-center p-6 z-10">
           {Icon && <Icon style={{ fontSize: "2.5rem", color }} className="mb-2" />}
-          <div className="h-1 w-10 mb-3 rounded" style={{ backgroundColor: color }} />
+          <div className="h-1 w-10 mb-3 flex  rounded" style={{ backgroundColor: color }} />
           <Typography  className="text-[#00264D] font-semibold !text-center !text-sm">
-            {title}
+            {label}
           </Typography>
 
-          <Link href="/about" className="inline-block mt-6 group hover:text-[#00008B] hover:underline">
-            <div className="flex gap-2 text-xs md:text-sm items-center"> <Typography className="!text-xs md:!text-xs "> Learn More</Typography>
-            <FaArrowRight className="text-xs   group-hover:translate-x-2 transition-transform duration-300" />
-            </div>
-            
-  </Link>
+         
         </div>
 
         {/* Back Side */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-[#00264D] text-white shadow-xl rounded-2xl flex flex-col justify-center items-center p-6">
-          <Typography variant="body2" className="text-center leading-relaxed">
+          <Typography variant="body2" className="text-center !mb-4  !leading-relaxed">
             {description}
           </Typography>
+
+          <Link key={slug}
+                        href={`/services/${slug}`}>
+                      
+            <div className="flex gap-2 text-xs md:text-sm items-center"> <Typography className="!text-xs md:!text-xs "> Explore Service</Typography>
+            <FaArrowRight className="!text-xs  md:!text-sm group-hover:translate-x-2 transition-transform duration-300" />
+            </div>
+            
+  </Link>
         </div>
       </div>
     </div>

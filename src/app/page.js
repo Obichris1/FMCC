@@ -26,6 +26,7 @@ const services = [
     color: "#00008B",
     underline: "bg-rose-600",
     icon: FaMoneyBillWave,
+    label: "Solar Power Installation", slug: "solar-power-installation" 
   },
   {
     title: "Digital Transformation",
@@ -36,6 +37,7 @@ const services = [
     color: "#00008B",
     underline: "bg-sky-600",
     icon: FaUniversity,
+    label: "Wind Energy Solutions", slug: "wind-energy-solutions" 
   },
   {
     title: "Brand Identity",
@@ -46,6 +48,7 @@ const services = [
     color: "#00008B",
     underline: "bg-sky-600",
     icon: FaUniversity,
+    label: "Energy Auditing", slug: "energy-auditing"
   },
   {
     title: "Market Intelligence",
@@ -56,6 +59,7 @@ const services = [
     color: "#00008B",
     underline: "bg-sky-600",
     icon: FaUniversity,
+    label: "Consulting Services", slug: "consulting-services"
   },
   {
     title: "Customer Experience",
@@ -66,6 +70,7 @@ const services = [
     color: "#00008B",
     underline: "bg-sky-600",
     icon: FaUniversity,
+    label: "Smart Grid Solutions", slug: "smart-grid-solutions"
   },
 ];
 
