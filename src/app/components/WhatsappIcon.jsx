@@ -3,7 +3,7 @@ import React from "react";
 const WhatsAppIcon = () => {
   return (
     <a
-      href="https://wa.me/2348038986372?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+      href="https://wa.me/2348093446460?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 flex items-center bg-green-500 rounded-full px-3 py-1 shadow-lg hover:scale-105 transition-transform"
