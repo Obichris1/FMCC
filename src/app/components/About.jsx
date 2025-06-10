@@ -38,9 +38,9 @@ const About = () => {
         variants={slideInFromBottom}
       >
         <div className="absolute inset-0 bg-black/60"></div>
-        <motion.div className="relative z-10" variants={slideInFromBottom}>
-          <h2 className="text-4xl font-bold">What we do</h2>
-          <p>Laoreet sit amet cursus sit amet dictum sit amet justo.</p>
+        <motion.div className="relative z-10 p-4" variants={slideInFromBottom}>
+          <h2 className="text-2xl md:text-3xl font-bold mb-1">About Us</h2>
+          <p className="text-sm md:text-xl">Laoreet sit amet cursus sit amet dictum sit amet justo.</p>
         </motion.div>
       </motion.div>
 
