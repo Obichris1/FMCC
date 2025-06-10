@@ -18,7 +18,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Contact Info */}
-          <div className="text-white text-xs md:text-sm flex flex-col gap-3 order-1 md:order-none w-full md:w-1/2 mb-4">
+          <div className="text-white text-sm md:text-sm flex flex-col gap-3 order-1 md:order-none w-full md:w-1/2 mb-4">
             {/* Logo */}
             <div className="mb-2">
               <Link href="/">
@@ -66,7 +66,7 @@ const Footer = () => {
             >
               Subscribe
             </Typography>
-            <Typography variant="body1" mb={3} className="text-white !text-xs md:!text-base">
+            <Typography variant="body1" mb={3} className="text-white !text-sm md:!text-base">
               Select topics and stay current with our latest insights
             </Typography>
 
@@ -140,12 +140,12 @@ const Footer = () => {
 
       {/* Bottom Copyright */}
       <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2">
-        <Typography className="!text-xs md:!text-sm text-white text-center">
+        <Typography className="!text-sm md:!text-sm text-white text-center">
           Copyright &copy; 2025 FMCC LTD. All rights reserved
         </Typography>
 
         <div className="flex items-center justify-center md:flex-row gap-1">
-          <Typography className="!text-xs text-white text-center">
+          <Typography className="!text-sm text-white text-center">
             Designed by
           </Typography>
           <Typography className="!text-xs  text-white text-center">

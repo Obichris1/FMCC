@@ -3,6 +3,11 @@
 import { useState } from "react";
 import { Typography } from "@mui/material";
 import clsx from "clsx";
+import Link from "next/link";
+import {
+
+  FaArrowRight
+} from "react-icons/fa";
 
 export default function ServiceCard({ title, description, color, icon: Icon }) {
   const [hovered, setHovered] = useState(false);
@@ -26,6 +31,13 @@ export default function ServiceCard({ title, description, color, icon: Icon }) {
           <Typography  className="text-[#00264D] font-semibold !text-center !text-sm">
             {title}
           </Typography>
+
+          <Link href="/about" className="inline-block mt-6 group hover:text-[#00008B] hover:underline">
+            <div className="flex gap-2 text-xs md:text-sm items-center"> <Typography className="!text-xs md:!text-xs "> Learn More</Typography>
+            <FaArrowRight className="text-xs   group-hover:translate-x-2 transition-transform duration-300" />
+            </div>
+            
+  </Link>
         </div>
 
         {/* Back Side */}
