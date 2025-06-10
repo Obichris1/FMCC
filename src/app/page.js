@@ -165,7 +165,7 @@ export default function Home() {
               to create solutions that drive success.
             </Typography>
 
-            <Link href="/target-route" className="inline-block mt-6 group hover:text-[#00008B] hover:underline">
+            <Link href="/about" className="inline-block mt-6 group hover:text-[#00008B] hover:underline">
             <div className="flex gap-2 text-sm md:text-base items-center"> <Typography> Learn More</Typography>
             <FaArrowRight className="text-xl   group-hover:translate-x-2 transition-transform duration-300" />
             </div>
