@@ -43,7 +43,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-8 text-sm lg:text-xs relative">
+          <nav className="hidden md:flex gap-8 text-sm lg:text-sm relative">
             <Link
               href="/"
               className={pathname === "/" ? activeLinkClass : "pb-1 relative"}
@@ -100,6 +100,13 @@ export default function Header() {
                 )}
               </AnimatePresence>
             </div>
+
+            <Link
+              href="/careers"
+              className={pathname === "/careers" ? activeLinkClass : "pb-1 relative"}
+            >
+              Careers
+            </Link>
 
             <Link
               href="/contact"
@@ -187,6 +194,9 @@ export default function Header() {
 
               <Link href="/about" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
+              </Link>
+              <Link href="/" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+               Careers
               </Link>
               <Link href="/contact" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact

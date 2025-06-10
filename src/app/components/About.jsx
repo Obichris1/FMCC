@@ -89,6 +89,7 @@ const About = () => {
         {/* Video Banner Section */}
         <motion.div
           initial="hidden"
+          className="mb-20 md:mt-20"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}

@@ -148,7 +148,7 @@ const Footer = () => {
           <Typography className="!text-xs text-white text-center">
             Designed by
           </Typography>
-          <Typography className="!text-xs underline text-white text-center">
+          <Typography className="!text-xs  text-white text-center">
             <Link href="https://www.oxrissolutions.com/" target="_blank">
               Oxris Solutions
             </Link>

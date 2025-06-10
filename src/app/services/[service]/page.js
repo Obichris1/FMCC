@@ -44,7 +44,7 @@ export default function ServicePage() {
     <div className="pb-6">
       {/* Banner Section */}
       <motion.div
-        className="relative h-[300px] bg-cover bg-center text-white flex items-center  justify-center"
+        className="relative h-[35vh] bg-cover bg-center text-white flex items-center  justify-center"
         style={{ backgroundImage: "url('/energy.jpg')" }}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
