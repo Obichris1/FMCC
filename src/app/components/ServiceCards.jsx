@@ -14,7 +14,7 @@ export default function ServiceCard({ title, description, color, icon: Icon,labe
 
   return (
     <div
-      className="w-84 sm:w-48 sm:h-48 h-64 perspective"
+      className="w-88 sm:w-48 sm:h-48 h-64 perspective"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -37,7 +37,7 @@ export default function ServiceCard({ title, description, color, icon: Icon,labe
 
         {/* Back Side */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-[#00264D] text-white shadow-xl rounded-2xl flex flex-col justify-center items-center p-6">
-          <Typography variant="body2" className="text-center !mb-4  !leading-relaxed">
+          <Typography variant="body2" className="text-center !mb-5  !leading-relaxed">
             {description}
           </Typography>
 
