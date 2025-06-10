@@ -138,8 +138,12 @@ export default function Header() {
               />
             </div>
 
-            <nav className="flex flex-col gap-5 text-base sm:text-lg">
+            <nav className="flex flex-col gap-10 text-base sm:text-lg">
               {/* Services Mobile Dropdown */}
+
+              <Link href="/" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+                Home
+              </Link>
               <div>
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
