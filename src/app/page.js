@@ -81,34 +81,28 @@ export default function Home() {
         </Typography>
 
         <div className="m-auto w-full sm:w-[30%]">
-          <div className="grid grid-cols-1 sm:grid-cols-5 grid-rows-5 sm:grid-rows-3 gap-y-4 sm:gap-y-2 sm:gap-x-4 place-items-center">
-            {/* Top Left */}
-            <div className="sm:col-start-1 sm:row-start-1 row-start-1">
-              <ServiceCard {...services[0]} />
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-5 grid-rows-4 sm:grid-rows-3 gap-y-4 sm:gap-y-2 sm:gap-x-4 place-items-center">
+  {/* Top Left */}
+  <div className="sm:col-start-1 sm:row-start-1 row-start-1">
+    <ServiceCard {...services[0]} />
+  </div>
 
-            {/* Top Right */}
-            <div className="sm:col-start-5 sm:row-start-1 row-start-2">
-              <ServiceCard {...services[1]} />
-            </div>
+  {/* Top Right */}
+  <div className="sm:col-start-5 sm:row-start-1 row-start-2">
+    <ServiceCard {...services[1]} />
+  </div>
 
-            {/* Center */}
-            {/* <div className="sm:col-start-3 sm:row-start-2 row-start-3">
-              <ServiceCard {...services[2]} />
-            </div> */}
+  {/* Bottom Left */}
+  <div className="sm:col-start-1 sm:row-start-3 row-start-3">
+    <ServiceCard {...services[2]} />
+  </div>
 
-            {/* Bottom Left */}
-            <div className="sm:col-start-1 sm:row-start-3 row-start-4">
-              <ServiceCard {...services[2]} />
-            </div>
+  {/* Bottom Right */}
+  <div className="sm:col-start-5 sm:row-start-3 row-start-4">
+    <ServiceCard {...services[3]} />
+  </div>
+</div>
 
-            {/* Bottom Right */}
-            <div className="sm:col-start-5 sm:row-start-3 row-start-5">
-              <ServiceCard {...services[3]} />
-            </div>
-
-
-          </div>
 
      
         </div>
