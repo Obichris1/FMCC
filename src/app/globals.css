@@ -22,11 +22,18 @@
   }
 }
 
+/* Default for large screens: Comic Sans */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Comic Sans MS", sans-serif !important;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+/* Mobile screens: use Comic Neue */
+@media (max-width: 768px) {
+  body {
+    font-family: var(--font-comic-neue), cursive, sans-serif;
+  }
+}
+
 
 .perspective {
   perspective: 1000px;

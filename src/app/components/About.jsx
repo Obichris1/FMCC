@@ -72,7 +72,7 @@ const About = () => {
             viewport={{ once: true }}
             variants={slideInRight}
           >
-             <Typography  className="!mb-4 !font-semibold !text-lg md:!text-2xl !mt-8">
+             <Typography  className="!mb-4 !font-bold !text-lg md:!text-2xl !mt-8">
               The Vision
             </Typography>
             <Typography className="!text-sm md:!text-base !leading-7 !mb-8">

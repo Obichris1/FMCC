@@ -59,7 +59,7 @@ export default function ServicePage() {
       {/* Content Section */}
       <div className="max-w-3xl mx-auto mt-12 px-4  ">
         <motion.h2
-          className="text-xl md:text-2xl  font-semibold mb-6"
+          className="text-xl md:text-2xl  font-bold mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}

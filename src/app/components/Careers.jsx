@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 import AboutBanner from "./AboutBanner";
@@ -20,9 +20,10 @@ const fadeIn = {
   visible: { opacity: 1, transition: { duration: 0.8 } },
 };
 const slideInFromBottom = {
-  hidden: { opacity: 0, y: 100 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
-};
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+  };
+  
 
 const Careers = () => {
   return (
@@ -38,24 +39,21 @@ const Careers = () => {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <motion.div className="relative z-10 p-4" variants={slideInFromBottom}>
-          <Typography className="!text-2xl md:!text-3xl !font-bold !mb-1">
-            FMCC careers
-          </Typography>
-          <Typography className="!text-sm md:!text-xl">
-            Laoreet sit amet cursus sit amet dictum sit amet justo.
-          </Typography>
+        <Typography className="!text-2xl md:!text-3xl !font-bold !mb-1">FMCC careers</Typography>
+        <Typography className="!text-sm md:!text-xl">Laoreet sit amet cursus sit amet dictum sit amet justo.</Typography>
         </motion.div>
       </motion.div>
+
 
       {/* Content Section */}
       <div className="max-w-3xl mx-auto mt-12 px-4 mb-60  ">
         <motion.h2
-          className=""
+          className="text-xl md:text-2xl  font-bold mb-3"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Typography className="!text-xl md:!text-2xl  !font-semibold !mb-3"> Coming Soon...</Typography>
+          Coming Soon....
         </motion.h2>
 
         <motion.p
@@ -64,9 +62,13 @@ const Careers = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Typography> Subscribe to our news letter for updates.</Typography>
+          Subscribe to our news letter for updates.
         </motion.p>
       </div>
+
+         
+
+   
     </div>
   );
 };

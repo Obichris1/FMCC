@@ -28,7 +28,7 @@ export default function ServiceCard({ title, description, color, icon: Icon,labe
         <div className="absolute w-full h-full backface-hidden bg-white shadow-md rounded-2xl flex flex-col justify-center items-center p-6 z-10">
           {Icon && <Icon style={{ fontSize: "2.5rem", color }} className="mb-5" />}
           {/* <div className="h-1 w-10 mb-3 flex  rounded" style={{ backgroundColor: color }} /> */}
-          <Typography  className="text-[#00264D] font-semibold !text-center !text-sm">
+          <Typography  className="text-[#00264D] font-bold !text-center !text-sm">
             {label}
           </Typography>
 

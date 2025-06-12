@@ -8,6 +8,19 @@ import { CustomProvider } from "./configs/provider";
 import theme from "@/app/theme/theme";
 
 
+// layout.js or wherever you're setting fonts
+import { Comic_Neue } from 'next/font/google';
+
+
+const comicNeue = Comic_Neue({
+  subsets: ['latin'],
+  weight: [  '700'], // Specify the weights you need
+  
+  variable: '--font-comic-neue',
+});
+
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${comicNeue.variable} font-comic antialiased`}
       >
         <CustomProvider>
         <Header />

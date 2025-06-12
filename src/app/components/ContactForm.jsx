@@ -164,7 +164,7 @@ export default function ContactForm() {
           {isLoading ? (
             <CircularProgress size={20} className="!text-primary" />
           ) : (
-            <Typography className="!text-xs !font-semibold !text-center  !text-white">
+            <Typography className="!text-xs !font-bold !text-center  !text-white">
               Submit
             </Typography>
           )}

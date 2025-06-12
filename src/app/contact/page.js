@@ -31,7 +31,7 @@ export default function page() {
   return (
     <div>
       {/* Hero Section */}
-       {/* <Typography variant="h4" className="text-center !font-semibold">Contact Us</Typography> */}
+       {/* <Typography variant="h4" className="text-center !font-bold">Contact Us</Typography> */}
        
 
       {/* Main Content */}
@@ -54,7 +54,7 @@ export default function page() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Get in touch with us
             </h3>
-            <p className="font-semibold mb-2">Want to make enquiries or issue a complaint?</p>
+            <p className="font-bold mb-2">Want to make enquiries or issue a complaint?</p>
            
             <div className=" text-xs md:text-sm flex flex-col gap-4 mt-10">
           {/* <Typography className="font-bold uppercase text-black mb-4">
