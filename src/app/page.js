@@ -5,74 +5,64 @@ import Hero from "./components/Hero";
 import { motion } from 'framer-motion';
 
 import {
-  FaMoneyBillWave,
-  FaUniversity,
-  FaHandsHelping,
-  FaUsers,
-  FaChartLine,
-  FaLeaf,
-  FaCogs,
-  FaArrowRight
+
+  FaArrowRight,
+  FaOilCan, FaDraftingCompass, 
 } from "react-icons/fa";
 import Link from "next/link";
+
+import { FaFire, FaCogs, FaToolbox, FaWarehouse } from "react-icons/fa";
 
 const services = [
   {
     title: "Business Strategy",
     category: "Service",
     description:
-      "Helping companies align vision and operations with market reality for scalable growth.",
-    label: "Financial",
+      "Reliable oilfield solutions focused on safety, efficiency, and innovation.",
+    label: "Oil and Gas Services",
+    slug: "oil-gas-services",
     color: "#00008B",
     underline: "bg-rose-600",
-    icon: FaMoneyBillWave,
-    label: "Solar Power Installation", slug: "solar-power-installation" 
+    icon: FaFire,
   },
   {
     title: "Digital Transformation",
     category: "Consulting",
     description:
-      "From legacy systems to AI-driven solutions, we enable digital excellence.",
-    label: "Institutional",
+      "Integrated engineering, procurement, and construction for complete project delivery.",
+    label: "EPC and Engineering",
+    slug: "epc-and-engineering",
     color: "#00008B",
     underline: "bg-sky-600",
-    icon: FaUniversity,
-    label: "Wind Energy Solutions", slug: "wind-energy-solutions" 
-  },
-  {
-    title: "Brand Identity",
-    category: "Marketing",
-    description:
-      "We craft strong brand narratives that connect, convert, and endure.",
-    label: "Institutional",
-    color: "#00008B",
-    underline: "bg-sky-600",
-    icon: FaUniversity,
-    label: "Energy Auditing", slug: "energy-auditing"
+    icon: FaCogs,
   },
   {
     title: "Market Intelligence",
     category: "Analytics",
     description:
-      "Real-time insights to drive smarter investment and business decisions.",
-    label: "Institutional",
+      "Efficient sourcing and delivery of merchandise across multiple sectors.",
+    label: "⁠General Contracting",
+    slug: "general-contracting",
     color: "#00008B",
     underline: "bg-sky-600",
-    icon: FaUniversity,
-    label: "Consulting Services", slug: "consulting-services"
+    icon: FaToolbox,
   },
   {
-    title: "Customer Experience",
-    category: "Strategy",
+    title: "Brand Identity",
+    category: "Marketing",
     description:
-      "Optimizing customer journeys to foster loyalty and satisfaction.",
-    label: "Institutional",
+      "Flexible asset leasing that boosts efficiency and reduces capital costs.",
+    label: "Leasing",
+    slug: "leasing",
     color: "#00008B",
     underline: "bg-sky-600",
-    icon: FaUniversity,
-    label: "Smart Grid Solutions", slug: "smart-grid-solutions"
+    icon: FaWarehouse,
   },
 ];
+
+
+
+
 
 export default function Home() {
   return (
@@ -90,7 +80,7 @@ export default function Home() {
           transactions and growth initiatives
         </Typography>
 
-        <div className="m-auto w-full sm:w-[40%]">
+        <div className="m-auto w-full sm:w-[30%]">
           <div className="grid grid-cols-1 sm:grid-cols-5 grid-rows-5 sm:grid-rows-3 gap-y-4 sm:gap-y-2 sm:gap-x-4 place-items-center">
             {/* Top Left */}
             <div className="sm:col-start-1 sm:row-start-1 row-start-1">
@@ -103,18 +93,18 @@ export default function Home() {
             </div>
 
             {/* Center */}
-            <div className="sm:col-start-3 sm:row-start-2 row-start-3">
+            {/* <div className="sm:col-start-3 sm:row-start-2 row-start-3">
               <ServiceCard {...services[2]} />
-            </div>
+            </div> */}
 
             {/* Bottom Left */}
             <div className="sm:col-start-1 sm:row-start-3 row-start-4">
-              <ServiceCard {...services[3]} />
+              <ServiceCard {...services[2]} />
             </div>
 
             {/* Bottom Right */}
             <div className="sm:col-start-5 sm:row-start-3 row-start-5">
-              <ServiceCard {...services[4]} />
+              <ServiceCard {...services[3]} />
             </div>
 
 

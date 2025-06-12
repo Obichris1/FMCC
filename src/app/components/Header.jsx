@@ -16,11 +16,11 @@ export default function Header() {
   const isServicesActive = pathname.startsWith("/services");
 
   const services = [
-    { label: "Oil and Gas Services", slug: "solar-power-installation" },
-    { label: "EPC and Engineering", slug: "wind-energy-solutions" },
-    { label: "Leasing", slug: "energy-auditing" },
-    { label: "⁠General Contracting", slug: "consulting-services" },
-    { label: "Smart Grid Solutions", slug: "smart-grid-solutions" },
+    { label: "Oil and Gas Services", slug: "oil-gas-services" },
+    { label: "EPC and Engineering", slug: "epc-and-engineering" },
+    { label: "Leasing", slug: "leasing" },
+    { label: "⁠General Contracting", slug: "general-contracting" },
+  
   ];
 
   const activeLinkClass =

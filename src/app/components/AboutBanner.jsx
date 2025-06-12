@@ -12,7 +12,7 @@ export default function AboutBanner() {
       <Box className=" rounded-md w-full  mx-auto flex flex-col md:flex-row !gap-16 items-center">
         {/* Left Section */}
         <div className="flex-1 ">
-          <Typography  className="!font-bold !mb-2 !text-lg md:!text-2xl">
+          <Typography  className="!font-bold !mb-4 !text-lg md:!text-2xl">
             Best Place to Work in 2024
           </Typography>
           <Typography variant="body1" className="!text-sm md:!text-base !leading-7">

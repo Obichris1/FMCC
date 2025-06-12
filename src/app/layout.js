@@ -4,6 +4,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import WhatsAppIcon from "./components/WhatsappIcon";
+import { CustomProvider } from "./configs/provider";
+import theme from "@/app/theme/theme";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +30,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <CustomProvider>
         <Header />
        
         {children}
         <WhatsAppIcon />
         <Footer />
+        </CustomProvider>
       </body>
     </html>
   );
