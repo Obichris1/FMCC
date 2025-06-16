@@ -80,8 +80,8 @@ export default function Home() {
           transactions and growth initiatives
         </Typography>
 
-        <div className="m-auto w-full sm:w-[30%] sm:h-[40%]">
-        <div className="grid grid-cols-1 sm:grid-cols-5 grid-rows-4 sm:grid-rows-3 gap-y-4 sm:gap-y-0 sm:gap-x-4 place-items-center">
+        <div className="m-auto w-full sm:w-[30%] sm:h-[20%]">
+        <div className="grid grid-cols-1 sm:grid-cols-5 grid-rows-1 gap-y-4 sm:gap-y-4 sm:gap-x-4 place-items-center">
   {/* Top Left */}
   <div className="sm:col-start-1 sm:row-start-1 row-start-1">
     <ServiceCard {...services[0]} />
