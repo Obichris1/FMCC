@@ -91,7 +91,7 @@ export default function Header() {
                       <Link
                         key={index}
                         href={`/services/${item.slug}`}
-                        className="hover:text-[#00008B] font-medium block"
+                        className="hover:text-[#00008B] !font-medium block text-center"
                       >
                         {item.label}
                       </Link>
