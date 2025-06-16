@@ -85,7 +85,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.25 }}
-                    className="absolute left-1/2 top-10 -translate-x-1/2 w-[40vw] bg-white text-black shadow-xl z-50 py-8 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                    className="absolute left-1/2 top-10 -translate-x-1/2 w-[40vw] xl:w-[50vw] bg-white text-black shadow-xl z-50 py-8 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
                     {services.map((item, index) => (
                       <Link
