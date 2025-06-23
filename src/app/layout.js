@@ -30,7 +30,7 @@ export const metadata = {
   keywords:
     "oil and gas services, EPC engineering, leasing services, general contracting, Nigeria, industrial solutions, FMC Consulting",
   openGraph: {
-    title: "FMC Consulting Group | Oil & Gas, EPC, Leasing, Contracting",
+    title: "FMCC Consulting Group | Oil & Gas, EPC, Leasing, Contracting",
     description:
       "We deliver integrated engineering, procurement, leasing, and general contracting services tailored to industrial and commercial sectors in Nigeria.",
     url: "https://fmccng.com",
@@ -40,7 +40,7 @@ export const metadata = {
         url: "https://fmccng.com/og-images/fmc-main.jpg",
         width: 1200,
         height: 630,
-        alt: "FMC Consulting Group Services",
+        alt: "FMCC Consulting Group Services",
       },
     ],
     type: "website",
