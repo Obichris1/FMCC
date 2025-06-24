@@ -24,11 +24,11 @@ export default function Header() {
   ];
 
   const activeLinkClass =
-    "relative pb-1 text-[#00264D] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#00264D]";
+    "relative pb-1 text-[#fff] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#fff] ";
 
   return (
     <>
-      <header className="sticky top-0 z-50 py-4 bg-white text-black shadow-md">
+      <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-white shadow-md">
         <div className="w-[90%] m-auto flex justify-between items-center">
           {/* Logo & Hamburger */}
           <div className="flex items-center gap-4">
@@ -43,17 +43,17 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-8 text-sm lg:text-sm relative">
+          <nav className="hidden md:flex gap-8 text-sm lg:text-base font-bold relative ">
             <Link
               href="/"
-              className={pathname === "/" ? activeLinkClass : "pb-1 relative"}
+              className={pathname === "/" ? activeLinkClass : "pb-1 relative hover:scale-105 transform  ease-in-out duration-300"}
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className={pathname === "/about" ? activeLinkClass : "pb-1 relative"}
+              className={pathname === "/about" ? activeLinkClass : "pb-1 relative hover:scale-105 transform  ease-in-out duration-300"}
             >
               About Us
             </Link>
@@ -91,7 +91,7 @@ export default function Header() {
                       <Link
                         key={index}
                         href={`/services/${item.slug}`}
-                        className="hover:text-[#00008B] !font-medium block text-center"
+                        className="hover:text-[#00008B] !font-bold block text-center hover:scale-105 transform  ease-in-out duration-300"
                       >
                         {item.label}
                       </Link>
@@ -103,14 +103,14 @@ export default function Header() {
 
             <Link
               href="/careers"
-              className={pathname === "/careers" ? activeLinkClass : "pb-1 relative"}
+              className={pathname === "/careers" ? activeLinkClass : "pb-1 relative hover:scale-105 transform  ease-in-out duration-300"}
             >
               Careers
             </Link>
 
             <Link
               href="/contact"
-              className={pathname === "/contact" ? activeLinkClass : "pb-1 relative"}
+              className={pathname === "/contact" ? activeLinkClass : "pb-1 relative hover:scale-105 transform  ease-in-out duration-300"}
             >
               Contact
             </Link>
