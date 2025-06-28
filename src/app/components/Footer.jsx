@@ -141,7 +141,7 @@ const Footer = () => {
       {/* Bottom Copyright */}
       <div className="py-4 w-[90%] m-auto text-white flex flex-col md:flex-row justify-between items-center gap-2">
         <Typography className="!text-sm md:!text-sm text-white text-center">
-          Copyright &copy; 2025 FMCC LTD. All rights reserved
+          Copyright &copy; 2025 FMCC. All rights reserved
         </Typography>
 
         <div className="flex items-center justify-center md:flex-row gap-1">

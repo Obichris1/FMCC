@@ -6,13 +6,13 @@ import { MdArrowForward } from "react-icons/md"; // Make sure this is imported
 
 const slides = [
   {
-    image: "/tractor.jpeg",
+    image: "/epc.avif",
     title: "The State of Aviation 2025",
     subtitle:
       "Can the aviation Service soar to new heights, or will headwinds slow its progress?",
   },
   {
-    image: "/auditing.webp",
+    image: "/contract.jpg",
     title: "AI Innovation in Energy",
     subtitle:
       "How artificial intelligence is reshaping aviation safety and efficiency.",

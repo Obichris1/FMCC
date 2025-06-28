@@ -13,17 +13,14 @@ export default function AboutBanner() {
         {/* Left Section */}
         <div className="flex-1 ">
           <Typography  className="!font-bold !mb-4 !text-lg md:!text-2xl">
-            Best Place to Work in 2024
+            Our Mission
           </Typography>
           <Typography variant="body1" className="!text-sm md:!text-base !leading-7">
-            Our people have spoken and we’re #1 on Glassdoor’s Best Places to
-            Work list in the Nigeria and the UK. Since the rankings debuted in 2009,
-            we've ranked among the top four companies in the US every single
-            year and have now earned the #1 spot a record six times.
+          To provide innovative, reliable, and value-driven solutions by combining deep industry expertise with a commitment to excellence, sustainability, and client success.
           </Typography>
 
           <Link
-            href="/services/solar-power-installation"
+            href="/services/oil-gas-services"
             className="inline-block mt-6 group hover:text-[#00008B] hover:underline"
           >
             <div className="flex gap-2 items-center">
@@ -38,7 +35,7 @@ export default function AboutBanner() {
         <div className="flex-1 flex justify-center">
           <Image
             src="/Preview2.png"
-            alt="Glassdoor Award"
+            alt=""
             width={600}
             height={400}
             className="rounded-md object-cover w-full h-auto"

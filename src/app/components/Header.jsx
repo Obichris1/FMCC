@@ -39,7 +39,7 @@ export default function Header() {
             >
               <FiMenu />
             </button>
-            <h1 className="font-serif text-lg sm:text-xl font-bold">FMCC Ltd</h1>
+            <h1 className="font-serif text-lg sm:text-xl font-bold">FMCC </h1>
           </div>
 
           {/* Desktop Navigation */}

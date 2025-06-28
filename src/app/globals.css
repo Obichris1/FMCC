@@ -25,6 +25,7 @@
 /* Default for large screens: Comic Sans */
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
+  /* font-weight: 900 ; */
 }
 
 /* Mobile screens: use Comic Neue */

@@ -58,10 +58,8 @@ const About = () => {
           >
            
             <Typography className=" !text-sm md:!text-base !leading-7 ">
-              We are proud to offer a wide range of solar energy services,
-              including solar panel installation, maintenance, and repair.
-              We believe that solar energy is the key to a more sustainable
-              future, and we are dedicated to making it accessible to everyone.
+            FMCC is an integrated solutions provider with a broad portfolio spanning engineering, energy services, logistics, civil infrastructure, industrial supply, leasing, and real estate. With deep technical expertise and a commitment to excellence, we serve clients across public and private sectors, delivering reliable, forward-driven outcomes from concept to completion.
+            Rooted in quality, innovation, and safety, we enable businesses to operate efficiently, build sustainably, and grow with confidence in today’s complex markets.
             </Typography>
           </motion.div>
 
@@ -77,11 +75,7 @@ const About = () => {
             </Typography>
             <Typography className="!text-sm md:!text-base !leading-7 !mb-8">
               Our commitment to sustainability is at the heart of everything
-              we do. We believe that solar energy is the key to a more
-              sustainable future, and we are dedicated to making it accessible
-              to everyone. That’s why we offer competitive pricing and
-              financing options to help make solar energy more affordable for
-              our clients.
+              we do. To lead with integrity and innovation, shaping a better future through impactful solutions and enduring partnerships
             </Typography>
           </motion.div>
         </div>
