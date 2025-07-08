@@ -25,12 +25,12 @@ export default function Header() {
   ];
 
   const activeLinkClass =
-    "relative pb-1 text-[#00264D] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#00264D] ";
+    "relative pb-1 text-[#fff] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#fff] ";
 
   return (
     <>
       {/* <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-white shadow-md"> */}
-      <header className="sticky top-0 z-50 py-4 bg-[#fff] text-[#00264D] shadow-md">
+      <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-[#fff] shadow-md">
         <div className="w-[90%] m-auto flex justify-between items-center">
           {/* Logo & Hamburger */}
           <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ export default function Header() {
             >
               <FiMenu />
             </button>
-            <Image src='/fmcc dark.png'
+            <Image src='/fmcc light.png'
             width={110}
             height={100} alt="alt" />
             
