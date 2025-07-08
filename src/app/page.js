@@ -31,7 +31,7 @@ const services = [
       "Flexible asset leasing that boosts efficiency and reduces capital costs.",
     label: "Leasing",
     slug: "leasing",
-    image: "/tractor.jpeg",
+    image: "/tractor1.avif",
   },
 
   {
@@ -40,7 +40,7 @@ const services = [
       "Reliable oilfield solutions focused on safety, efficiency, and innovation.",
     label: "Oil and Gas Services",
     slug: "oil-gas-services",
-    image: "/oil2.jpeg",
+    image: "/oil5.jpeg",
   },
 ];
 

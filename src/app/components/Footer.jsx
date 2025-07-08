@@ -9,10 +9,12 @@ import {
   AiOutlinePhone,
   AiOutlineX,
 } from "react-icons/ai";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className="bg-[#00264D] mt-10">
+      
       {/* Contact Us */}
       <div className="flex flex-col gap-10 mb-4 w-[90%] m-auto py-12">
         {/* Top Section */}
@@ -20,16 +22,11 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="text-white text-sm md:text-sm flex flex-col gap-3 order-1 md:order-none w-full md:w-1/2 mb-4">
             {/* Logo */}
-            <div className="mb-2">
+            <div className="mb-8">
               <Link href="/">
-              <Typography
-              variant="h6"
-              fontWeight="bold"
-              gutterBottom
-              className="text-white"
-            >
-              FMCC Logo
-            </Typography>
+              <Image src='/fmcc light.png'
+            width={110}
+            height={100} alt="alt" />
               </Link>
             </div>
 

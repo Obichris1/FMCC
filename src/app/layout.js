@@ -24,20 +24,24 @@ const geistMono = Geist_Mono({
 
 // ✅ SEO Metadata for FMC Consulting Group
 export const metadata = {
-  title: "FMC Consulting Group | Oil & Gas, EPC, Leasing, Contracting",
+  title: "FMCC | Oil & Gas, EPC, Leasing, Contracting",
   description:
-    "FMC Consulting Group offers services in Oil and Gas, EPC and Engineering, Leasing, and General Contracting. Trusted by industries across Nigeria.",
+    "FMCC offers services in Oil and Gas, EPC and Engineering, Leasing, and General Contracting. Trusted by industries across Nigeria.",
   keywords:
-    "oil and gas services, EPC engineering, leasing services, general contracting, Nigeria, industrial solutions, FMC Consulting",
+    "services, oil and gas services, EPC engineering, leasing services, general contracting, Nigeria, industrial solutions, FMC Consulting",
+  metadataBase: new URL("https://fmccng.com"),
+  alternates: {
+    canonical: "https://fmccng.com",
+  },
   openGraph: {
-    title: "FMCC Consulting Group | Oil & Gas, EPC, Leasing, Contracting",
+    title: "FMCC | Oil & Gas, EPC, Leasing, Contracting",
     description:
       "We deliver integrated engineering, procurement, leasing, and general contracting services tailored to industrial and commercial sectors in Nigeria.",
     url: "https://fmccng.com",
     siteName: "FMC Consulting Group",
     images: [
       {
-        url: "https://fmccng.com/og-images/fmc-main.jpg",
+        url: "https://fmccng.com/og-images/fmc-main.jpg", // ✅ Ensure logo is clearly visible in this image
         width: 1200,
         height: 630,
         alt: "FMCC Consulting Group Services",
@@ -45,20 +49,24 @@ export const metadata = {
     ],
     type: "website",
   },
-  metadataBase: new URL("https://fmccng.com"),
-  alternates: {
-    canonical: "https://fmccng.com",
-  },
   verification: {
-    google: "qkj3Fz27k2E6KTx8a8MVCX0lYmgL9Y3-1FG9K68IzMY", // Replace this
+    google: "qkj3Fz27k2E6KTx8a8MVCX0lYmgL9Y3-1FG9K68IzMY", // Replace if needed
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Add favicon and mobile touch icon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* You may also include a manifest.json for PWA-style branding if needed */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${comicNeue.variable} font-comic antialiased`}
       >
@@ -71,7 +79,7 @@ export default function RootLayout({ children }) {
               "@type": "Organization",
               name: "FMCC Consulting Group",
               url: "https://fmccng.com",
-              logo: "https://fmccng.com/logo.png",
+              logo: "https://fmccng.com/logo.png", // ✅ Make sure this logo is PNG, transparent, and 112x112+
               description:
                 "We provide expert services in oil and gas, EPC, leasing, and general contracting.",
               address: {

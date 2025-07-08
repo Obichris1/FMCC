@@ -77,7 +77,7 @@ export default function ContactForm() {
             variant="standard" // Removes box styling
             InputProps={{
               disableUnderline: true, // Removes default underline
-              style: { borderBottom: "2px solid black", paddingBottom: "10px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px"  },
               startAdornment: <AiOutlineUser className="mr-2" />,
             }}
           />
@@ -95,7 +95,7 @@ export default function ContactForm() {
             variant="standard"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px"  },
               startAdornment: <AiOutlineMail className="mr-2" />,
             }}
           />
@@ -105,6 +105,7 @@ export default function ContactForm() {
             type="number"
             id="phoneNumber"
             name="phoneNumber"
+            className="!text-3xl"
             value={formData.phoneNumber}
             onChange={handleChange}
             required
@@ -113,7 +114,7 @@ export default function ContactForm() {
             variant="standard"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px" },
               startAdornment: <AiOutlinePhone className="mr-2" />,
             }}
           />
@@ -131,7 +132,7 @@ export default function ContactForm() {
             name="questionaire"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px" },
             }}
           >
             <MenuItem value="Instagram">Instagram</MenuItem>

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { Button } from "@mui/material";
+import Image from "next/image";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,11 +25,12 @@ export default function Header() {
   ];
 
   const activeLinkClass =
-    "relative pb-1 text-[#fff] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#fff] ";
+    "relative pb-1 text-[#00264D] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-[#00264D] ";
 
   return (
     <>
-      <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-white shadow-md">
+      {/* <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-white shadow-md"> */}
+      <header className="sticky top-0 z-50 py-4 bg-[#fff] text-[#00264D] shadow-md">
         <div className="w-[90%] m-auto flex justify-between items-center">
           {/* Logo & Hamburger */}
           <div className="flex items-center gap-4">
@@ -39,7 +41,10 @@ export default function Header() {
             >
               <FiMenu />
             </button>
-            <h1 className="font-serif text-lg sm:text-xl font-bold">FMCC </h1>
+            <Image src='/fmcc dark.png'
+            width={110}
+            height={100} alt="alt" />
+            
           </div>
 
           {/* Desktop Navigation */}
