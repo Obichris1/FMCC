@@ -133,7 +133,7 @@ export default function ContactForm() {
             name="questionaire"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "16px" },
             }}
           >
             <MenuItem value="Instagram">Instagram</MenuItem>

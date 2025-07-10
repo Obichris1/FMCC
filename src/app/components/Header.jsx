@@ -33,7 +33,7 @@ export default function Header() {
       <header className="sticky top-0 z-50 py-4 bg-[#00264D] text-[#fff] shadow-md">
         <div className="w-[90%] m-auto flex justify-between items-center">
           {/* Logo & Hamburger */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-between gap-8">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden text-xl focus:outline-none"
@@ -151,7 +151,7 @@ export default function Header() {
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4 }}
           >
-            <div className="flex justify-end mb-6">
+            <div className="flex justify-end mb-4 mt-2">
               <FiX
                 className="text-2xl cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -215,7 +215,7 @@ export default function Header() {
                 Contact
               </Link>
 
-              <div className="mt-6 border-t border-white/20 pt-4 flex flex-col gap-3">
+              <div className=" py-3 border-b border-white/20 flex flex-col gap-3">
                 <Link href="#" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                   Subscribe
                 </Link>
