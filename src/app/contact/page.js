@@ -54,7 +54,7 @@ export default function page() {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Get in touch with us
             </h3>
-            <p className="font-bold mb-2">Want to make enquiries or issue a complaint?</p>
+            <p className="font-bold  md:text-lg mb-2">Want to make enquiries or issue a complaint?</p>
            
             <div className=" text-xs md:text-sm flex flex-col gap-4 mt-10">
           {/* <Typography className="font-bold uppercase text-black mb-4">
@@ -64,20 +64,20 @@ export default function page() {
           <span className="flex items-center gap-4 ">
             <AiOutlineMail className="text-lg" />
             <Link
-              href="mailto:obichris202@gmail.com?subject=Inquiry&body=Hello, I want to make enquiries..."
-              className="hover:text-primary"
+              href="mailto:info@fmccng.com?subject=Inquiry&body=Hello, I want to make enquiries..."
+              className="hover:text-primary font-bold  md:text-base"
             >
-              obichris202@gmail.com
+            info@fmccng.com
             </Link>
           </span>
           <span className="flex items-center gap-4 ">
             <AiOutlinePhone className="text-lg" />
-            <Link href="tel:+2348129614462" className="hover:text-primary">
-              +234 812 961 4462
+            <Link href="tel:+2348129614462" className="hover:text-primary font-bold  md:text-base">
+              +971 54 322 3965
             </Link>
             ,
-            <Link href="tel:+2349150831932" className="hover:text-primary">
-              +234 915 083 1932
+            <Link href="tel:+2349150831932" className="hover:text-primary font-bold md:text-base">
+              +234 803 898 6372
             </Link>
           </span>
         </div>

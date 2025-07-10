@@ -73,11 +73,12 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             fullWidth
-            label="Full Name"
+            placeholder="Full Name"
+        
             variant="standard" // Removes box styling
             InputProps={{
               disableUnderline: true, // Removes default underline
-              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px"  },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "16px"  },
               startAdornment: <AiOutlineUser className="mr-2" />,
             }}
           />
@@ -91,11 +92,11 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             fullWidth
-            label="Email"
+            placeholder="Email"
             variant="standard"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px"  },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "16px" },
               startAdornment: <AiOutlineMail className="mr-2" />,
             }}
           />
@@ -110,11 +111,11 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             fullWidth
-            label="Phone Number"
+            placeholder="Phone Number"
             variant="standard"
             InputProps={{
               disableUnderline: true,
-              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "20px" },
+              style: { borderBottom: "2px solid black", paddingBottom: "10px", fontSize : "16px" },
               startAdornment: <AiOutlinePhone className="mr-2" />,
             }}
           />
@@ -153,7 +154,7 @@ export default function ContactForm() {
             onChange={handleChange}
             aria-label="maximum height"
             // margin="normal"
-            label="Leave us a message"
+           placeholder="Leave us a message"
           />
         </div>
 
@@ -173,7 +174,7 @@ export default function ContactForm() {
       </form>
 
       {success && (
-        <div className="bg-black p-4 my-10 rounded-xl flex justify-center items-center gap-5 w-full md:max-w-6xl m-auto">
+        <div className=" p-4 my-10 rounded-xl flex justify-center items-center gap-5 w-full md:max-w-6xl m-auto">
           <AiOutlineCheckCircle className="text-2xl text-primary" />
           <Typography className="text-xs md:text-sm">
             Thank you for contacting us! We will be in touch with you shortly.

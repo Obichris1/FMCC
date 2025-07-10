@@ -36,15 +36,23 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-2xl focus:outline-none"
+              className="md:hidden text-xl focus:outline-none"
               aria-label="Toggle menu"
             >
               <FiMenu />
             </button>
-            <Image src='/fmcc light.png'
-            width={110}
-            height={100} alt="alt" />
-            
+            <div className="relative w-[70px] h-[40px] sm:w-[100px] sm:h-[4 0px]">
+  <Link href="/">
+    <Image
+      src="/fmcc light.png"
+      alt="FMCC logo"
+      fill
+      className="object-contain"
+      // sizes="(max-width: 640px) 110px, 150px"
+    />
+  </Link>
+</div>
+
           </div>
 
           {/* Desktop Navigation */}
@@ -124,7 +132,7 @@ export default function Header() {
           {/* Auth */}
           <Button
             variant="contained"
-            className="!hidden sm:!flex gap-4 items-center !bg-[#00264D] text-sm lg:text-sm !py-2 capitalize"
+            className="!hidden sm:!flex gap-4 items-center !bg-[#000] text-sm lg:text-sm !py-2 capitalize"
           >
             <Link className="capitalize" href="#">
               Subscribe
@@ -153,13 +161,13 @@ export default function Header() {
             <nav className="flex flex-col gap-10 text-base sm:text-lg">
               {/* Services Mobile Dropdown */}
 
-              <Link href="/" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/" className="!text-sm py-3 border-b border-white/20  " onClick={() => setIsMobileMenuOpen(false)}>
                 Home
               </Link>
               <div>
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                  className="flex gap-2 items-center w-full text-left text-sm  font-medium"
+                  className="flex gap-2 items-center w-full text-left text-sm py-3 border-b border-white/20   font-medium"
                 >
                   Services
                   <FaChevronDown
@@ -197,13 +205,13 @@ export default function Header() {
                 </AnimatePresence>
               </div>
 
-              <Link href="/about" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/about" className="!text-sm  py-3 border-b border-white/20  " onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </Link>
-              <Link href="/careers" className="!text-sm " onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/careers" className="!text-sm  py-3 border-b border-white/20 " onClick={() => setIsMobileMenuOpen(false)}>
                Careers
               </Link>
-              <Link href="/contact" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/contact" className="!text-sm  py-3 border-b border-white/20 " onClick={() => setIsMobileMenuOpen(false)}>
                 Contact
               </Link>
 

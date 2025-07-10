@@ -22,13 +22,17 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="text-white text-sm md:text-sm flex flex-col gap-3 order-1 md:order-none w-full md:w-1/2 mb-4">
             {/* Logo */}
-            <div className="mb-8">
-              <Link href="/">
-              <Image src='/fmcc light.png'
-            width={110}
-            height={100} alt="alt" />
-              </Link>
-            </div>
+            <div className="relative w-[70px] h-[40px] sm:w-[100px] sm:h-[40px] mb-8">
+  <Link href="/">
+    <Image
+      src="/fmcc light.png"
+      alt="FMCC logo"
+      fill
+      className="object-contain"
+      // sizes="(max-width: 640px) 110px, 150px"
+    />
+  </Link>
+</div>
 
             {/* <span className="flex items-center gap-4">
               <AiOutlineEnvironment />
