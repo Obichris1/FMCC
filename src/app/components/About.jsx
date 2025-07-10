@@ -31,7 +31,7 @@ const About = () => {
       {/* Header Section */}
       <motion.div
         className="relative h-[90vh] bg-cover bg-center text-white flex items-center justify-center text-center"
-        style={{ backgroundImage: "url('/fmccB.png')" }}
+        style={{ backgroundImage: "url('/fmccB-min.png')" }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
