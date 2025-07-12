@@ -3,24 +3,25 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Typography, Button } from "@mui/material";
 import { MdArrowForward } from "react-icons/md"; // Make sure this is imported
+import Link from "next/link";
 
 const slides = [
   {
     image: "/epc.avif",
-    title: "The State of Aviation 2025",
+    title: "Shaping tomorrow’s infrastructure today",
     subtitle:
-      "Can the aviation Service soar to new heights, or will headwinds slow its progress?",
+      "Innovative real estate and logistics solutions designed to support sustainable growth and expansion.",
   },
   {
     image: "/contract.jpg",
-    title: "AI Innovation in Energy",
+    title: "Building strategic partnerships that deliver results",
     subtitle:
-      "How artificial intelligence is reshaping aviation safety and efficiency.",
+      "From procurement to trade facilitation, FMCC connects clients to global opportunities through trust and collaboration.",
   },
   {
     image: "/energy.jpg",
-    title: "Sustainable Skies Ahead",
-    subtitle: "The push toward greener, cleaner air travel by 2030.",
+    title: "Fueling energy with precision and expertise",
+    subtitle: "Reliable oilfield services and technical support that power progress across industries.",
   },
 ];
 
@@ -55,13 +56,14 @@ export default function Hero() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8 }}
           >
-            <Typography className=" !text-2xl md:!text-4xl !font-bold !leading-7 !mb-4">
+            <Typography className=" !text-2xl md:!text-4xl !font-bold !min-w-2xl   !mb-4">
               {title}
             </Typography>
             <Typography className="!text-sm md:!text-lg !mb-6">
               {subtitle}
             </Typography>
            
+           <Link href="/services/oil-gas-services">
             <Button
               variant="contained"
             className="!text-white !text-xs md:!text-base !px-8 !py-3 !bg-[#00264D] font-bold hover:!shadow-2xl hover:!scale-105 flex items-center gap-2"
@@ -69,6 +71,7 @@ export default function Hero() {
               Explore
               <MdArrowForward className="text-white text-xl" />
             </Button>
+            </Link>
           </motion.div>
         </AnimatePresence>
       </div>

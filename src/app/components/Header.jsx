@@ -215,7 +215,7 @@ export default function Header() {
                 Contact
               </Link>
 
-              <div className=" py-3 border-b border-white/20 flex flex-col gap-3">
+              <div className=" py-3  flex flex-col gap-3">
                 <Link href="#" className="!text-sm" onClick={() => setIsMobileMenuOpen(false)}>
                   Subscribe
                 </Link>
