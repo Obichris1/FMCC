@@ -8,8 +8,8 @@ import {
 
 export default function AboutBanner() {
   return (
-    <div className="space-y-24">
-      <Box className=" rounded-md w-full  mx-auto flex flex-col md:flex-row !gap-16 items-center">
+    <div className="space-y-24 w-full bg-gray-100">
+      <Box className=" rounded-md !py-18   !w-[90%] !m-auto mx-auto flex flex-col md:flex-row !gap-16 items-center">
         {/* Left Section */}
         <div className="flex-1 ">
           <Typography  className="!font-bold !mb-4 !text-lg md:!text-2xl">

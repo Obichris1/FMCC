@@ -208,6 +208,7 @@ export default function Header() {
               <Link href="/about" className="!text-sm  py-3 border-b border-white/20  " onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </Link>
+              
               <Link href="/careers" className="!text-sm  py-3 border-b border-white/20 " onClick={() => setIsMobileMenuOpen(false)}>
                Careers
               </Link>

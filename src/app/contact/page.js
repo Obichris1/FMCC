@@ -72,11 +72,11 @@ export default function page() {
           </span>
           <span className="flex items-center gap-4 ">
             <AiOutlinePhone className="text-lg" />
-            <Link href="tel:+2348129614462" className="hover:text-primary font-bold !text-lg  md:text-base">
+            <Link href="tel:+2348129614462" className="hover:text-primary font-bold !text-sm  md:!text-base">
               +971 54 322 3965
             </Link>
             ,
-            <Link href="tel:+2349150831932" className="hover:text-primary font-bold md:text-base">
+            <Link href="tel:+2349150831932" className="hover:text-primary font-bold text-sm md:!text-base">
               +234 803 898 6372
             </Link>
           </span>

@@ -45,13 +45,13 @@ const Footer = () => {
                 235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos
               </Link>
             </span> */}
-            <span className="flex items-center gap-4">
+            <span className="flex items-center text-base gap-4">
               <AiOutlineMail />
               <Link href="mailto:dolaposquare123@gmail.com">
                info@fmccng.com
               </Link>
             </span>
-            <span className="flex items-center gap-4">
+            <span className="flex items-center text-base gap-4">
               <AiOutlinePhone />
               <Link href="tel:+2349165235934">+234 916 523 5934</Link>
             </span>
