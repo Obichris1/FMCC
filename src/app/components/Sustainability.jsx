@@ -46,7 +46,9 @@ export default function SustainabilityPage() {
           </p>
         </motion.div>
 
-        <motion.section {...fadeInUp} className="mt-10">
+        <div className="grid md:grid-cols-2 gap-24 mt-12 mb-12 ">
+
+        <motion.section {...fadeInUp} className="mt-10 ">
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Environmental Stewardship
           </h2>
@@ -64,7 +66,7 @@ export default function SustainabilityPage() {
           </p>
         </motion.section>
 
-        <motion.section {...fadeInUp} className="mt-10">
+        <motion.section {...fadeInUp} className="mt-10 ">
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Social Responsibility
           </h2>
@@ -82,7 +84,7 @@ export default function SustainabilityPage() {
           </p>
         </motion.section>
 
-        <motion.section {...fadeInUp} className="mt-10">
+        <motion.section {...fadeInUp} className="mt-10 ">
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Economic Resilience
           </h2>
@@ -95,10 +97,11 @@ export default function SustainabilityPage() {
             <li>Continuous innovation, efficiency, and operational excellence</li>
             <li>Alignment with global Environmental, Social, and Governance (ESG) standards</li>
           </ul>
-          <p className="mt-4">
+          {/* <p className="mt-4">
             At FMCC, sustainability is more than a responsibility — it is a strategic advantage. We remain focused on delivering enduring value, maintaining accountability, and contributing to a more sustainable and inclusive future.
-          </p>
+          </p> */}
         </motion.section>
+      </div>
       </div>
     </main>
   );
