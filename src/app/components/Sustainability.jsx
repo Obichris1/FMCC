@@ -41,7 +41,7 @@ export default function SustainabilityPage() {
         <motion.div {...fadeInUp}>
          
          
-          <p className="mt-4 text-lg">
+          <p className="mt-4 ">
             We are committed to advancing sustainable practices that support long-term value creation for our clients, stakeholders, communities, and the environment.
           </p>
         </motion.div>

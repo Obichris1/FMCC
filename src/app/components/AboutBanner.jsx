@@ -32,13 +32,14 @@ export default function AboutBanner() {
         </div>
 
         {/* Right Section - Image */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center relative !rounded-2xl">
+        <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
           <Image
-            src="/Preview2.png"
+            src="/fmcc-staff.png"
             alt=""
             width={600}
             height={400}
-            className="rounded-md object-cover w-full h-auto"
+            className="rounded-2xl object-cover w-full h-auto"
           />
         </div>
       </Box>

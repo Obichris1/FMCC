@@ -36,12 +36,12 @@ export default function Header() {
           <div className="flex items-center justify-between gap-8">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-xl focus:outline-none"
+              className="md:hidden text-2xl focus:outline-none"
               aria-label="Toggle menu"
             >
               <FiMenu />
             </button>
-            <div className="relative w-[70px] h-[40px] sm:w-[100px] sm:h-[4 0px]">
+            <div className="relative w-[85px] h-[55px] sm:w-[100px] sm:h-[40px]">
   <Link href="/">
     <Image
       src="/fmcc light.png"
