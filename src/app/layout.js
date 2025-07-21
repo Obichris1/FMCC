@@ -4,12 +4,19 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppIcon from "./components/WhatsappIcon";
 import { CustomProvider } from "./configs/provider";
-import { Comic_Neue } from "next/font/google";
+import { Comic_Neue,Poppins,Roboto } from "next/font/google";
 
-const comicNeue = Comic_Neue({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-comic-neue",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-roboto",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700", "800"], // ✅ Add weights you plan to use
 });
 
 const geistSans = Geist({
@@ -67,9 +74,8 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         {/* You may also include a manifest.json for PWA-style branding if needed */}
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${comicNeue.variable} font-comic antialiased`}
-      >
+      <body className={`${roboto.variable} antialiased`}>
+      
         {/* ✅ Structured Data JSON-LD */}
         <script
           type="application/ld+json"
@@ -77,7 +83,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "FMCC Consulting Group",
+              name: "FMCC",
               url: "https://fmccng.com",
               logo: "https://fmccng.com/logo.png", // ✅ Make sure this logo is PNG, transparent, and 112x112+
               description:
