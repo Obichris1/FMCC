@@ -45,7 +45,7 @@ export default function Header() {
   <Link href="/">
     <Image
       src="/fmcc light.png"
-      alt="FMCC logo"
+      alt=""
       fill
       className="object-contain"
       // sizes="(max-width: 640px) 110px, 150px"
@@ -151,7 +151,7 @@ export default function Header() {
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4 }}
           >
-            <div className="flex justify-end mb-4 mt-2">
+            <div className="flex justify-end mb-4 mt-8 md:mt-2">
               <FiX
                 className="text-2xl cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}

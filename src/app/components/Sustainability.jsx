@@ -41,7 +41,7 @@ export default function SustainabilityPage() {
         <motion.div {...fadeInUp}>
          
          
-          <p className="mt-4 ">
+          <p className="mt-4 leading-7 text-sm md:text-base ">
             We are committed to advancing sustainable practices that support long-term value creation for our clients, stakeholders, communities, and the environment.
           </p>
         </motion.div>
@@ -52,28 +52,28 @@ export default function SustainabilityPage() {
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Environmental Stewardship
           </h2>
-          <p className="mb-4">
+          <p className="mb-4 leading-7 text-sm md:text-base">
             We are committed to minimizing the environmental impact of our operations by:
           </p>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside leading-7 text-sm md:text-base space-y-2">
             <li>Implementing emissions reduction measures and adopting energy-efficient technologies in oil and gas activities</li>
             <li>Enhancing supply chain sustainability through optimized logistics and transport practices</li>
             <li>Promoting eco-conscious real estate development and resource-efficient infrastructure</li>
             <li>Upholding rigorous environmental compliance across all sectors of operation</li>
           </ul>
-          <p className="mt-4">
+          <p className="mt-4 leading-7 text-sm md:text-base">
             Our goal is to operate responsibly while supporting the global transition toward cleaner, more sustainable systems.
           </p>
         </motion.section>
 
-        <motion.section {...fadeInUp} className="mt-10 ">
+        <motion.section {...fadeInUp} className="mt-10 leading-7 text-sm md:text-base ">
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Social Responsibility
           </h2>
-          <p className="mb-4">
+          <p className="mb-4 leading-7 text-sm md:text-base" >
             People are central to FMCC’s sustainability vision. We foster a culture of safety, integrity, and shared value through:
           </p>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside space-y-2 leading-7 text-sm md:text-base">
             <li>Industry-leading Health, Safety, and Environment (HSE) performance</li>
             <li>Ethical labor practices and a commitment to workforce diversity and inclusion</li>
             <li>Strategic engagement with host communities to ensure mutual growth</li>
@@ -88,10 +88,10 @@ export default function SustainabilityPage() {
           <h2 className="text-base md:text-xl text-black font-bold mb-4">
             Economic Resilience
           </h2>
-          <p className="mb-4">
+          <p className="mb-4 leading-7 text-sm md:text-base">
             Our business model is designed to be future-focused and resilient. We drive economic sustainability through:
           </p>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside leading-7 text-sm md:text-base space-y-2">
             <li>Consistent delivery of high-quality services across multiple industries</li>
             <li>Responsible procurement and long-term client partnerships</li>
             <li>Continuous innovation, efficiency, and operational excellence</li>

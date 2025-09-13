@@ -56,7 +56,7 @@ export default function Hero() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8 }}
           >
-            <Typography className=" !text-2xl md:!text-4xl !font-bold !min-w-2xl   !mb-4">
+            <Typography className=" !text-2xl md:!text-4xl !font-bold md:!min-w-2xl   !mb-4">
               {title}
             </Typography>
             <Typography className="!text-sm md:!text-lg !mb-6">

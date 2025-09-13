@@ -22,11 +22,12 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="text-white text-sm md:text-sm flex flex-col gap-3 order-1 md:order-none w-full md:w-1/2 mb-4">
             {/* Logo */}
-            <div className="relative w-[70px] h-[40px] sm:w-[100px] sm:h-[40px] mb-8">
+            <div className="relative w-[85px] h-[55px] sm:w-[100px] sm:h-[40px] mb-8">
+              
   <Link href="/">
     <Image
       src="/fmcc light.png"
-      alt="FMCC logo"
+      alt=""
       fill
       className="object-contain"
       // sizes="(max-width: 640px) 110px, 150px"
@@ -45,13 +46,13 @@ const Footer = () => {
                 235, Ariket Plaza Alake B/stop Ikotun-Idimu Road, Lagos
               </Link>
             </span> */}
-            <span className="flex items-center text-base gap-4">
+            <span className="flex items-center text-sm md:text-base gap-4">
               <AiOutlineMail />
               <Link href="mailto:dolaposquare123@gmail.com">
                info@fmccng.com
               </Link>
             </span>
-            <span className="flex items-center text-base gap-4">
+            <span className="flex items-center text-sm md:text-base gap-4">
               <AiOutlinePhone />
               <Link href="tel:+2349165235934">+234 916 523 5934</Link>
             </span>
