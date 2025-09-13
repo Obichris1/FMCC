@@ -65,7 +65,7 @@ export default function page() {
             <AiOutlineMail className="text-lg" />
             <Link
               href="mailto:info@fmccng.com?subject=Inquiry&body=Hello, I want to make enquiries..."
-              className="hover:text-primary font-bold  md:text-base"
+              className="hover:text-primary  font-bold !text-sm  md:!text-base"
             >
             info@fmccng.com
             </Link>
